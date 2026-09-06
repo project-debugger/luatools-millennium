@@ -1562,6 +1562,21 @@
   const LT_REPO = "project-debugger/luatools-millennium";
   const LT_VERSION = "9.0.2";
 
+  const LT_SVGS = {
+    discord: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#5865F2"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>',
+    gear: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>',
+    close: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>',
+    back: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>',
+    cloud: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>',
+    palette: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>',
+    globe: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+    bolt: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+    rotate: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>',
+    trash: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
+    check: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+    external: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>'
+  };
+
   const LANGUAGE_LABELS = {
     en: "English",
     es: "Español",
@@ -1602,8 +1617,7 @@
     const origHtml = triggerBtn ? triggerBtn.innerHTML : "";
     if (triggerBtn) {
       triggerBtn.style.pointerEvents = "none";
-      const iconEl = triggerBtn.querySelector("i");
-      if (iconEl) iconEl.className = "fa-solid fa-spinner fa-spin";
+      triggerBtn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation:spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>' + lt("Checking…") + '</span>';
     }
 
     const apiUrl = `https://api.github.com/repos/${LT_REPO}/releases/latest`;
@@ -1664,18 +1678,17 @@
 
   function showUpdateAvailableModal(currentVer, latestVer, releaseUrl, notes) {
     ensureLuaToolsStyles();
-    ensureFontAwesome();
     const overlay = document.createElement("div");
     overlay.className = "luatools-update-modal-overlay";
     overlay.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,0.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:100005;display:flex;align-items:center;justify-content:center;";
 
     const colors = getThemeColors();
     const modal = document.createElement("div");
-    modal.style.cssText = `position:relative;background:${colors.modalBg};color:${colors.text};border:1px solid ${colors.borderRgba};border-radius:18px;width:480px;padding:28px 32px;box-shadow:0 24px 80px rgba(0,0,0,.7), 0 0 0 1px ${colors.shadowRgba};animation:slideUp 0.15s cubic-bezier(0.16, 1, 0.3, 1);`;
+    modal.style.cssText = `position:relative;background:${colors.modalBg};color:${colors.text};border:1px solid ${colors.borderRgba};border-radius:18px;width:460px;padding:28px 32px;box-shadow:0 24px 80px rgba(0,0,0,.75), 0 0 0 1px ${colors.shadowRgba};animation:slideUp 0.15s cubic-bezier(0.16, 1, 0.3, 1);`;
 
     modal.innerHTML = `
-      <div style="text-align:center;font-size:36px;color:${colors.accent};margin-bottom:12px;">
-        <i class="fa-solid fa-cloud-arrow-down"></i>
+      <div style="text-align:center;color:${colors.accent};margin-bottom:12px;">
+        ${LT_SVGS.cloud}
       </div>
       <div style="font-size:22px;font-weight:700;color:${colors.text};text-align:center;margin-bottom:8px;">
         ${lt("Update Available!")}
@@ -1685,7 +1698,7 @@
       </div>
       <div style="display:flex;gap:12px;justify-content:center;margin-top:16px;">
         <a href="#" class="luatools-btn lt-update-later" style="min-width:100px;text-align:center;"><span>${lt("Later")}</span></a>
-        <a href="#" class="luatools-btn primary lt-update-download" style="min-width:160px;text-align:center;"><span>${lt("Download Update")} <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:12px;margin-left:6px;"></i></span></a>
+        <a href="#" class="luatools-btn primary lt-update-download" style="min-width:160px;text-align:center;display:inline-flex;align-items:center;justify-content:center;gap:6px;"><span>${lt("Download Update")}</span> ${LT_SVGS.external}</a>
       </div>
     `;
 
@@ -1727,7 +1740,6 @@
           if (d) d.remove();
         } catch (_) {}
         ensureLuaToolsStyles();
-        ensureFontAwesome();
 
         const colors = getThemeColors();
         const overlay = document.createElement("div");
@@ -1736,7 +1748,7 @@
 
         const modal = document.createElement("div");
         modal.className = "luatools-menu-card";
-        modal.style.cssText = `position:relative;background:linear-gradient(165deg, rgba(23, 29, 41, 0.96) 0%, rgba(13, 17, 26, 0.98) 100%);color:${colors.text};border:1px solid rgba(255,255,255,0.12);border-radius:20px;width:480px;padding:24px 28px;box-shadow:0 30px 90px rgba(0,0,0,0.8), 0 0 1px 1px rgba(255,255,255,0.08);animation:slideUp 0.16s cubic-bezier(0.16,1,0.3,1);`;
+        modal.style.cssText = `position:relative;background:linear-gradient(165deg, rgba(22, 27, 38, 0.96) 0%, rgba(13, 17, 23, 0.98) 100%);color:${colors.text};border:1px solid rgba(255,255,255,0.12);border-radius:18px;width:440px;padding:22px 24px;box-shadow:0 30px 90px rgba(0,0,0,0.8), 0 0 1px 1px rgba(255,255,255,0.08);animation:slideUp 0.16s cubic-bezier(0.16,1,0.3,1);`;
 
         // Check if on game page
         const match = window.location.href.match(/https:\/\/store\.steampowered\.com\/app\/(\d+)/) ||
@@ -1746,66 +1758,66 @@
         const gameName = isGamePage ? getPageGameName() : "";
 
         modal.innerHTML = `
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.08);">
             <div style="display:flex;align-items:center;gap:10px;">
-              <img src="LuaTools/luatools-icon.png" alt="LuaTools" style="width:26px;height:26px;border-radius:6px;" onerror="this.style.display='none'" />
-              <span style="font-size:20px;font-weight:700;letter-spacing:-0.2px;color:${colors.text};">${t("menu.title", "LuaTools")}</span>
-              <span style="background:rgba(102,192,244,0.15);border:1px solid rgba(102,192,244,0.3);color:${colors.accent};font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;letter-spacing:0.3px;">v${LT_VERSION}</span>
+              <img src="LuaTools/luatools-icon.png" alt="LuaTools" style="width:24px;height:24px;border-radius:6px;" onerror="this.style.display='none'" />
+              <span style="font-size:18px;font-weight:700;letter-spacing:-0.2px;color:${colors.text};">${t("menu.title", "LuaTools")}</span>
+              <span style="background:rgba(56,189,248,0.15);border:1px solid rgba(56,189,248,0.3);color:${colors.accent};font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;letter-spacing:0.3px;">v${LT_VERSION}</span>
             </div>
-            <div style="display:flex;align-items:center;gap:8px;">
-              <a href="#" class="lt-icon-btn lt-header-discord" title="${t("menu.discord", "Discord")}" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#5865F2;font-size:16px;text-decoration:none;transition:all 0.2s ease;">
-                <i class="fa-brands fa-discord"></i>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <a href="#" class="lt-icon-btn lt-header-discord" title="Discord (https://discord.gg/XeTECUuqb)" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:9px;color:#5865F2;text-decoration:none;transition:all 0.2s ease;">
+                ${LT_SVGS.discord}
               </a>
-              <a href="#" class="lt-icon-btn lt-header-settings" title="${t("menu.settings", "Settings")}" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:${colors.accent};font-size:16px;text-decoration:none;transition:all 0.2s ease;">
-                <i class="fa-solid fa-gear"></i>
+              <a href="#" class="lt-icon-btn lt-header-settings" title="${t("menu.settings", "Settings")}" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:9px;color:${colors.accent};text-decoration:none;transition:all 0.2s ease;">
+                ${LT_SVGS.gear}
               </a>
-              <a href="#" class="lt-icon-btn lt-header-close" title="${t("settings.close", "Close")}" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:${colors.textSecondary};font-size:16px;text-decoration:none;transition:all 0.2s ease;">
-                <i class="fa-solid fa-xmark"></i>
+              <a href="#" class="lt-icon-btn lt-header-close" title="${t("settings.close", "Close")}" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:9px;color:${colors.textSecondary};text-decoration:none;transition:all 0.2s ease;">
+                ${LT_SVGS.close}
               </a>
             </div>
           </div>
 
           ${isGamePage ? `
-          <div class="lt-game-card" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:14px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <div class="lt-game-card" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px 14px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;">
             <div style="flex:1;min-width:0;">
-              <div style="font-size:11px;color:${colors.textSecondary};text-transform:uppercase;letter-spacing:0.5px;margin-bottom:2px;">App ID: ${appid}</div>
-              <div style="font-size:15px;font-weight:600;color:${colors.text};white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${gameName || "Current Game"}</div>
-              <div class="lt-game-status" style="font-size:12px;color:${colors.textSecondary};margin-top:4px;display:flex;align-items:center;gap:6px;">
-                <i class="fa-solid fa-spinner fa-spin" style="font-size:11px;"></i> <span>${lt("Checking…")}</span>
+              <div style="font-size:10px;color:${colors.textSecondary};text-transform:uppercase;letter-spacing:0.5px;margin-bottom:2px;">App ID: ${appid}</div>
+              <div style="font-size:14px;font-weight:600;color:${colors.text};white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${gameName || "Current Game"}</div>
+              <div class="lt-game-status" style="font-size:11px;color:${colors.textSecondary};margin-top:3px;display:flex;align-items:center;gap:6px;">
+                <span>${lt("Checking…")}</span>
               </div>
             </div>
-            <div class="lt-game-action-wrap" style="display:flex;gap:8px;"></div>
+            <div class="lt-game-action-wrap" style="display:flex;gap:6px;"></div>
           </div>
           ` : ""}
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
-            <a href="#" class="lt-menu-card-btn lt-action-updates" style="display:flex;flex-direction:column;align-items:flex-start;padding:14px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-                <i class="fa-solid fa-cloud-arrow-down" style="font-size:18px;color:${colors.accent};"></i>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:6px;">
+            <a href="#" class="lt-menu-card-btn lt-action-updates" style="display:flex;flex-direction:column;align-items:flex-start;padding:12px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;">
+                <span style="color:${colors.accent};display:flex;align-items:center;">${LT_SVGS.cloud}</span>
                 <span style="font-size:13px;font-weight:600;color:${colors.text};">${t("menu.checkForUpdates", "Check Updates")}</span>
               </div>
-              <span style="font-size:11px;color:${colors.textSecondary};opacity:0.8;">${lt("Check GitHub releases")}</span>
+              <span style="font-size:11px;color:${colors.textSecondary};opacity:0.8;">${lt("GitHub releases")}</span>
             </a>
 
-            <a href="#" class="lt-menu-card-btn lt-action-settings" style="display:flex;flex-direction:column;align-items:flex-start;padding:14px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-                <i class="fa-solid fa-sliders" style="font-size:18px;color:#a78bfa;"></i>
+            <a href="#" class="lt-menu-card-btn lt-action-settings" style="display:flex;flex-direction:column;align-items:flex-start;padding:12px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;">
+                <span style="color:#a78bfa;display:flex;align-items:center;">${LT_SVGS.palette}</span>
                 <span style="font-size:13px;font-weight:600;color:${colors.text};">${t("menu.settings", "Settings")}</span>
               </div>
               <span style="font-size:11px;color:${colors.textSecondary};opacity:0.8;">${lt("Themes & language")}</span>
             </a>
 
-            <a href="#" class="lt-menu-card-btn lt-action-discord" style="display:flex;flex-direction:column;align-items:flex-start;padding:14px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-                <i class="fa-brands fa-discord" style="font-size:18px;color:#5865F2;"></i>
+            <a href="#" class="lt-menu-card-btn lt-action-discord" style="display:flex;flex-direction:column;align-items:flex-start;padding:12px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;">
+                <span style="display:flex;align-items:center;">${LT_SVGS.discord}</span>
                 <span style="font-size:13px;font-weight:600;color:${colors.text};">${t("menu.discord", "Discord")}</span>
               </div>
-              <span style="font-size:11px;color:${colors.textSecondary};opacity:0.8;">${lt("Join community")}</span>
+              <span style="font-size:11px;color:${colors.textSecondary};opacity:0.8;">discord.gg/XeTECUuqb</span>
             </a>
 
-            <a href="#" class="lt-menu-card-btn lt-action-restart" style="display:flex;flex-direction:column;align-items:flex-start;padding:14px 16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
-              <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
-                <i class="fa-solid fa-rotate" style="font-size:18px;color:#34d399;"></i>
+            <a href="#" class="lt-menu-card-btn lt-action-restart" style="display:flex;flex-direction:column;align-items:flex-start;padding:12px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;text-decoration:none;transition:all 0.2s cubic-bezier(0.16,1,0.3,1);cursor:pointer;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;">
+                <span style="color:#34d399;display:flex;align-items:center;">${LT_SVGS.rotate}</span>
                 <span style="font-size:13px;font-weight:600;color:${colors.text};">${lt("Restart Steam")}</span>
               </div>
               <span style="font-size:11px;color:${colors.textSecondary};opacity:0.8;">${lt("Apply changes")}</span>
@@ -1819,7 +1831,7 @@
         // Hover animations
         modal.querySelectorAll(".lt-menu-card-btn").forEach((btn) => {
           btn.onmouseover = () => {
-            btn.style.background = "rgba(255,255,255,0.09)";
+            btn.style.background = "rgba(255,255,255,0.08)";
             btn.style.borderColor = colors.accent;
             btn.style.transform = "translateY(-2px)";
             btn.style.boxShadow = "0 8px 20px rgba(0,0,0,0.4)";
@@ -1894,14 +1906,14 @@
               const exists = !!(payload && payload.success && payload.exists === true);
               if (exists) {
                 if (statusEl) {
-                  statusEl.innerHTML = `<i class="fa-solid fa-circle-check" style="color:#34d399;"></i> <span style="color:#34d399;font-weight:600;">${lt("LuaTools Added")}</span>`;
+                  statusEl.innerHTML = `<span style="color:#34d399;font-weight:600;display:inline-flex;align-items:center;gap:4px;">${LT_SVGS.check} ${lt("LuaTools Added")}</span>`;
                 }
                 if (actionWrap) {
                   const removeBtn = document.createElement("a");
                   removeBtn.href = "#";
                   removeBtn.className = "luatools-btn";
-                  removeBtn.style.cssText = "padding:8px 14px;font-size:12px;display:flex;align-items:center;gap:6px;color:#f87171;border-color:rgba(248,113,113,0.3);";
-                  removeBtn.innerHTML = `<i class="fa-solid fa-trash-can"></i> <span>${lt("Remove")}</span>`;
+                  removeBtn.style.cssText = "padding:7px 12px;font-size:12px;display:inline-flex;align-items:center;gap:6px;color:#f87171;border-color:rgba(248,113,113,0.3);";
+                  removeBtn.innerHTML = `${LT_SVGS.trash} <span>${lt("Remove")}</span>`;
                   removeBtn.onclick = (e) => {
                     e.preventDefault();
                     showLuaToolsConfirm(
@@ -1926,14 +1938,14 @@
                 }
               } else {
                 if (statusEl) {
-                  statusEl.innerHTML = `<i class="fa-solid fa-circle-info" style="color:${colors.textSecondary};"></i> <span>${lt("Not added yet")}</span>`;
+                  statusEl.innerHTML = `<span>${lt("Not added yet")}</span>`;
                 }
                 if (actionWrap) {
                   const addBtn = document.createElement("a");
                   addBtn.href = "#";
                   addBtn.className = "luatools-btn primary";
-                  addBtn.style.cssText = "padding:8px 14px;font-size:12px;display:flex;align-items:center;gap:6px;";
-                  addBtn.innerHTML = `<i class="fa-solid fa-cloud-arrow-down"></i> <span>${lt("Add Game")}</span>`;
+                  addBtn.style.cssText = "padding:7px 12px;font-size:12px;display:inline-flex;align-items:center;gap:6px;";
+                  addBtn.innerHTML = `${LT_SVGS.cloud} <span>${lt("Add Game")}</span>`;
                   addBtn.onclick = (e) => {
                     e.preventDefault();
                     overlay.remove();
@@ -1944,7 +1956,7 @@
               }
             })
             .catch(() => {
-              if (statusEl) statusEl.innerHTML = `<span style="color:${colors.textSecondary};">${lt("Ready")}</span>`;
+              if (statusEl) statusEl.innerHTML = `<span>${lt("Ready")}</span>`;
             });
         }
 
@@ -1963,7 +1975,6 @@
     } catch (_) {}
 
     ensureLuaToolsStyles();
-    ensureFontAwesome();
 
     const colors = getThemeColors();
     const overlay = document.createElement("div");
@@ -1972,7 +1983,7 @@
 
     const modal = document.createElement("div");
     modal.className = "luatools-settings-modal";
-    modal.style.cssText = `position:relative;background:linear-gradient(165deg, rgba(23, 29, 41, 0.96) 0%, rgba(13, 17, 26, 0.98) 100%);color:${colors.text};border:1px solid rgba(255,255,255,0.12);border-radius:20px;width:720px;max-height:85vh;display:flex;flex-direction:column;box-shadow:0 30px 90px rgba(0,0,0,0.85), 0 0 1px 1px rgba(255,255,255,0.08);animation:slideUp 0.16s cubic-bezier(0.16,1,0.3,1);overflow:hidden;`;
+    modal.style.cssText = `position:relative;background:linear-gradient(165deg, rgba(22, 27, 38, 0.96) 0%, rgba(13, 17, 23, 0.98) 100%);color:${colors.text};border:1px solid rgba(255,255,255,0.12);border-radius:18px;width:660px;max-height:85vh;display:flex;flex-direction:column;box-shadow:0 30px 90px rgba(0,0,0,0.85), 0 0 1px 1px rgba(255,255,255,0.08);animation:slideUp 0.16s cubic-bezier(0.16,1,0.3,1);overflow:hidden;`;
 
     const activeThemeKey = getCurrentThemeKey();
     const activeLang = ltResolveLang();
@@ -1980,36 +1991,36 @@
     const useSteamLang = localStorage.getItem("luatools_use_steam_lang") === "1";
 
     modal.innerHTML = `
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid rgba(255,255,255,0.08);">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,0.08);">
         <div style="display:flex;align-items:center;gap:12px;">
-          <a href="#" class="lt-settings-back-btn" title="${t("Back", "Back")}" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:${colors.text};font-size:14px;text-decoration:none;transition:all 0.2s ease;">
-            <i class="fa-solid fa-arrow-left"></i>
+          <a href="#" class="lt-settings-back-btn" title="${t("Back", "Back")}" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:${colors.text};text-decoration:none;transition:all 0.2s ease;">
+            ${LT_SVGS.back}
           </a>
-          <span style="font-size:18px;font-weight:700;color:${colors.text};">${t("settings.title", "LuaTools · Settings")}</span>
+          <span style="font-size:17px;font-weight:700;color:${colors.text};">${t("settings.title", "LuaTools · Settings")}</span>
         </div>
         <div style="display:flex;align-items:center;gap:8px;">
-          <a href="#" class="lt-settings-close-btn" title="${t("settings.close", "Close")}" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:${colors.textSecondary};font-size:14px;text-decoration:none;transition:all 0.2s ease;">
-            <i class="fa-solid fa-xmark"></i>
+          <a href="#" class="lt-settings-close-btn" title="${t("settings.close", "Close")}" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:${colors.textSecondary};text-decoration:none;transition:all 0.2s ease;">
+            ${LT_SVGS.close}
           </a>
         </div>
       </div>
 
-      <div class="lt-settings-content" style="flex:1 1 auto;overflow-y:auto;padding:20px 24px;display:flex;flex-direction:column;gap:20px;">
+      <div class="lt-settings-content" style="flex:1 1 auto;overflow-y:auto;padding:18px 22px;display:flex;flex-direction:column;gap:16px;">
         <!-- Theme Section -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:16px 18px;">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:14px 16px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
             <div>
-              <div style="font-size:15px;font-weight:600;color:${colors.text};"><i class="fa-solid fa-palette" style="color:${colors.accent};margin-right:8px;"></i>${t("settings.theme.label", "Theme & Palette")}</div>
-              <div style="font-size:12px;color:${colors.textSecondary};margin-top:2px;">${t("settings.theme.description", "Choose a visual theme for the LuaTools interface.")}</div>
+              <div style="font-size:14px;font-weight:600;color:${colors.text};display:flex;align-items:center;gap:8px;"><span style="color:${colors.accent};">${LT_SVGS.palette}</span> ${t("settings.theme.label", "Theme & Palette")}</div>
+              <div style="font-size:11px;color:${colors.textSecondary};margin-top:2px;">${t("settings.theme.description", "Choose a visual theme for the LuaTools interface.")}</div>
             </div>
           </div>
-          <div class="lt-theme-grid" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(130px, 1fr));gap:8px;">
+          <div class="lt-theme-grid" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));gap:8px;">
             ${Object.keys(THEMES).map((key) => {
               const th = THEMES[key];
               const isSelected = key === activeThemeKey;
               return `
-                <div class="lt-theme-card" data-theme-key="${key}" style="display:flex;align-items:center;gap:8px;padding:10px 12px;background:${isSelected ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.04)'};border:1px solid ${isSelected ? (th.accent || colors.accent) : 'rgba(255,255,255,0.08)'};border-radius:10px;cursor:pointer;transition:all 0.2s ease;">
-                  <div style="width:14px;height:14px;border-radius:50%;background:${th.accent || '#66c0f4'};box-shadow:0 0 8px ${th.shadow || 'transparent'};flex-shrink:0;"></div>
+                <div class="lt-theme-card" data-theme-key="${key}" style="display:flex;align-items:center;gap:8px;padding:9px 11px;background:${isSelected ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.04)'};border:1px solid ${isSelected ? (th.accent || colors.accent) : 'rgba(255,255,255,0.08)'};border-radius:9px;cursor:pointer;transition:all 0.2s ease;">
+                  <div style="width:13px;height:13px;border-radius:50%;background:${th.accent || '#66c0f4'};box-shadow:0 0 8px ${th.shadow || 'transparent'};flex-shrink:0;"></div>
                   <span style="font-size:12px;font-weight:${isSelected ? '700' : '500'};color:${isSelected ? colors.text : colors.textSecondary};white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${th.name || key}</span>
                 </div>
               `;
@@ -2018,13 +2029,13 @@
         </div>
 
         <!-- Language Section -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:16px 18px;">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:14px 16px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
             <div>
-              <div style="font-size:15px;font-weight:600;color:${colors.text};"><i class="fa-solid fa-language" style="color:#a78bfa;margin-right:8px;"></i>${t("settings.language.label", "Language")}</div>
-              <div style="font-size:12px;color:${colors.textSecondary};margin-top:2px;">${t("settings.language.description", "Select display language for LuaTools.")}</div>
+              <div style="font-size:14px;font-weight:600;color:${colors.text};display:flex;align-items:center;gap:8px;"><span style="color:#a78bfa;">${LT_SVGS.globe}</span> ${t("settings.language.label", "Language")}</div>
+              <div style="font-size:11px;color:${colors.textSecondary};margin-top:2px;">${t("settings.language.description", "Select display language for LuaTools.")}</div>
             </div>
-            <select class="lt-language-select" style="background:rgba(255,255,255,0.08);color:${colors.text};border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:8px 12px;font-size:13px;outline:none;cursor:pointer;">
+            <select class="lt-language-select" style="background:rgba(255,255,255,0.08);color:${colors.text};border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:7px 11px;font-size:12px;outline:none;cursor:pointer;">
               ${Object.keys(LANGUAGE_LABELS).map((code) => {
                 const isSelected = code === activeLang;
                 return `<option value="${code}" ${isSelected ? 'selected' : ''}>${LANGUAGE_LABELS[code] || code}</option>`;
@@ -2032,41 +2043,41 @@
             </select>
           </div>
           <div style="display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid rgba(255,255,255,0.05);">
-            <div style="font-size:13px;color:${colors.textSecondary};">${t("settings.useSteamLanguage.label", "Auto-match Steam language")}</div>
-            <input type="checkbox" class="lt-use-steam-lang-check" ${useSteamLang ? 'checked' : ''} style="cursor:pointer;width:16px;height:16px;" />
+            <div style="font-size:12px;color:${colors.textSecondary};">${t("settings.useSteamLanguage.label", "Auto-match Steam language")}</div>
+            <input type="checkbox" class="lt-use-steam-lang-check" ${useSteamLang ? 'checked' : ''} style="cursor:pointer;width:15px;height:15px;" />
           </div>
         </div>
 
         <!-- Behavior Section -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:16px 18px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:14px 16px;">
           <div style="display:flex;align-items:center;justify-content:space-between;">
             <div>
-              <div style="font-size:15px;font-weight:600;color:${colors.text};"><i class="fa-solid fa-bolt" style="color:#f59e0b;margin-right:8px;"></i>${t("settings.fastDownload.label", "Fast Download Mode")}</div>
-              <div style="font-size:12px;color:${colors.textSecondary};margin-top:2px;">${t("settings.fastDownload.description", "Automatically select the first available download source.")}</div>
+              <div style="font-size:14px;font-weight:600;color:${colors.text};display:flex;align-items:center;gap:8px;"><span style="color:#f59e0b;">${LT_SVGS.bolt}</span> ${t("settings.fastDownload.label", "Fast Download Mode")}</div>
+              <div style="font-size:11px;color:${colors.textSecondary};margin-top:2px;">${t("settings.fastDownload.description", "Automatically select the first available download source.")}</div>
             </div>
-            <input type="checkbox" class="lt-fast-dl-check" ${fastDl ? 'checked' : ''} style="cursor:pointer;width:16px;height:16px;" />
+            <input type="checkbox" class="lt-fast-dl-check" ${fastDl ? 'checked' : ''} style="cursor:pointer;width:15px;height:15px;" />
           </div>
         </div>
 
-        <!-- About & Community Section -->
-        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;">
+        <!-- Community Section -->
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;">
           <div>
-            <div style="font-size:14px;font-weight:600;color:${colors.text};">LuaTools for Millennium</div>
-            <div style="font-size:12px;color:${colors.textSecondary};margin-top:2px;">Version v${LT_VERSION} · Millennium Edition</div>
+            <div style="font-size:13px;font-weight:600;color:${colors.text};">LuaTools for Millennium</div>
+            <div style="font-size:11px;color:${colors.textSecondary};margin-top:2px;">v${LT_VERSION} · Millennium Edition</div>
           </div>
           <div style="display:flex;gap:8px;">
-            <a href="#" class="luatools-btn lt-settings-discord-link" style="padding:8px 14px;font-size:12px;display:flex;align-items:center;gap:6px;text-decoration:none;">
-              <i class="fa-brands fa-discord" style="color:#5865F2;"></i> <span>Discord</span>
+            <a href="#" class="luatools-btn lt-settings-discord-link" style="padding:7px 12px;font-size:12px;display:inline-flex;align-items:center;gap:6px;text-decoration:none;">
+              ${LT_SVGS.discord} <span>Discord</span>
             </a>
-            <a href="#" class="luatools-btn lt-settings-update-check-btn" style="padding:8px 14px;font-size:12px;display:flex;align-items:center;gap:6px;text-decoration:none;">
-              <i class="fa-solid fa-cloud-arrow-down"></i> <span>${lt("Check for updates")}</span>
+            <a href="#" class="luatools-btn lt-settings-update-check-btn" style="padding:7px 12px;font-size:12px;display:inline-flex;align-items:center;gap:6px;text-decoration:none;">
+              ${LT_SVGS.cloud} <span>${lt("Check for updates")}</span>
             </a>
           </div>
         </div>
       </div>
 
-      <div style="padding:16px 24px;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:flex-end;">
-        <a href="#" class="luatools-btn primary lt-settings-done-btn" style="min-width:120px;text-align:center;"><span>${lt("Close")}</span></a>
+      <div style="padding:14px 22px;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:flex-end;">
+        <a href="#" class="luatools-btn primary lt-settings-done-btn" style="min-width:110px;text-align:center;"><span>${lt("Close")}</span></a>
       </div>
     `;
 
